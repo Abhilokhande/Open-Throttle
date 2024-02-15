@@ -1,0 +1,21 @@
+.footer {
+    padding: 20px 0; /* Add some padding for spacing inside the footer */
+    background-color: #333; /* Set background color as needed */
+    color: #fff; /* Set text color as needed */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  .about-info {
+    max-width: 30000px; /* Adjust the maximum width as needed */
+  }
+  /* Add more styling as needed */
+  

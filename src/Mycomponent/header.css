@@ -1,0 +1,31 @@
+.navbar{
+     color: rgb(24, 9, 9);
+    margin: -8px;
+}
+.nav-link
+{
+    color: rgb(244, 250, 255);
+    font-size: 25px;
+    
+    
+}
+:hover.nav-link
+{
+    color: chartreuse;
+}
+
+.container-fluid{
+    height: 70px;
+    background-color:black;
+}
+.navbar-brand
+{
+    font-size: 25px;
+    color: red;
+    font-style:bold;
+}
+
+:hover.navbar-brand
+{
+   color: aliceblue; 
+}
