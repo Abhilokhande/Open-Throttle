@@ -2,10 +2,10 @@ import React from 'react';
 import "./footer.css";
 export default function Footer() {
   return (
-    <foot>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
+    <footer>
+        <div className="container">
+            <div className="footer-content">
+                <div className="footer-links">
                     <a href="#">Home</a>
                     <a href="#">About Us</a>
                     <a href="#">Contact</a>
@@ -15,6 +15,6 @@ export default function Footer() {
           </div>
             </div>
         </div>
-    </foot>
+    </footer>
   )
 }

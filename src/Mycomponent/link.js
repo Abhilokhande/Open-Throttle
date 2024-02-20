@@ -1,17 +1,17 @@
 import React from 'react'
 import './link.css'
-export default function Link() {
+export default function Link(props) {
   return (
-    <div class="link">
-    <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+    <div className="link">
+    <ul className="nav justify-content-center">
+  <li className="nav-item">
+    <a className="nav-link active" aria-current="page" href="#">{props.l1}</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+  <li className="nav-item">
+    <a className="nav-link" href="#">{props.l2}</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+  <li className="nav-item">
+    <a className="nav-link" href="#">{props.l3}</a>
   </li>
    </ul>
    </div>

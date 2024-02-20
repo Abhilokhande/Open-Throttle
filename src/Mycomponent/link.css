@@ -1,6 +1,12 @@
-:hover.nav-link{
-    color: red;
-}
+
 .link{
     background-color: black;
 }
+.nav-link {
+    color: white; 
+  }
+  
+:hover.nav-link
+  {
+      color: rgb(255, 0, 0);
+  }
