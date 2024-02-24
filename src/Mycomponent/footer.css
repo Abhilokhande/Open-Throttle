@@ -4,11 +4,11 @@
     color: #fff; /* Set text color as needed */
   }
   
-  .footer-content {
+  /* .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   
   .footer-links {
     display: flex;
@@ -16,6 +16,16 @@
   }
   .about-info {
     max-width: 30000px; /* Adjust the maximum width as needed */
+  }
+  .footer-container{
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+  }
+  .footer-content{
+    justify-items: center;
+  }
+  .footer-linkContent{
+    justify-items: center;
   }
   /* Add more styling as needed */
   

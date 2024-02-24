@@ -12,7 +12,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Import Login only once
 import Login from './Mycomponent/Login';
-
+import Contact from './Mycomponent/contact';
 function App() {
   return (
     <>
@@ -23,6 +23,7 @@ function App() {
       <Image1/>
       <Threeimage/>
       <Showroom/>
+      <Contact/>
       <Footer/>
       </>
   );
