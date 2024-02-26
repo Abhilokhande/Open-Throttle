@@ -1,17 +1,36 @@
-import React from 'react'
+// Login.js
 
-export default function Login() {
+import React, { useState } from 'react';
+import "./header.css";
+const Login = () => {
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+
+  function handleLogin(e) {
+      e.preventDefault()
+      // Code to handle login goes here
+      props.toggle()
+  }
+
   return (
-    <div>
-      <div className='login'>
-        <h1>Login page</h1><br/>
-        <label>User name</label>
-        <input type="text" name='user'placeholder='Enter username'/><br/>
-        <label>Password</label>
-        <input type="text" placeholder='Enter Password'/><br/>
-        <button>Login</button>
-        <button>Sign in</button>
+      <div className="popup">
+          <div className="popup-inner">
+              <h2>Login</h2>
+              <form onSubmit={handleLogin}>
+                  <label>
+                      Username:
+                      <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
+                  </label>
+                  <label>
+                      Password:
+                      <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
+                  </label>
+                  <button type="submit">Login</button>
+              </form>
+              <button onClick={props.toggle}>Close</button>
+          </div>
       </div>
-    </div>
   )
 }
+
+export default Login;

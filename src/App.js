@@ -9,9 +9,9 @@ import Showroom  from './Mycomponent/Showroom';
 import Image1 from './Mycomponent/image1';
 import Threeimage from './Mycomponent/threeimage';
 import React from "react";
+import Login from "./Mycomponent/Login";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Import Login only once
-import Login from './Mycomponent/Login';
 import Contact from './Mycomponent/contact';
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
       <Link l1='A' l2='B' l3='C' />
       {/* <Video/> */}
       <Image1/>
+      {/* <Login/> */}
       <Threeimage/>
       <Showroom/>
       <Contact/>
