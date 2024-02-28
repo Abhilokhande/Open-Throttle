@@ -3,7 +3,6 @@ import './App.css';
 import Header from "./Mycomponent/Header";
 import Footer from './Mycomponent/footer';
 import Carousel from './Mycomponent/Carousel';
-import Video from './Mycomponent/video';
 import Showroom  from './Mycomponent/Showroom';
 import Image1 from './Mycomponent/image1';
 import Threeimage from './Mycomponent/threeimage';
@@ -17,7 +16,7 @@ function App() {
     <>
     <Router>
       <Header title="Open Throttle's"n1='Explore' n2='Login'n3='Signup'n4='' />
-      <div>
+      {/* <div>
         <Switch>
           <Route path="/">
           <Carousel/>
@@ -25,7 +24,11 @@ function App() {
           <Threeimage/>
         </Route>
       </Switch>
-      </div>
+      </div> */}
+      {/* <Login/> */}
+      <Carousel/>
+           <Image1/>
+          <Threeimage/>
       <Showroom/>
       <Contact/>
       <Footer/>

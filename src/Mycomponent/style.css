@@ -82,7 +82,7 @@ body{
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  background-color: #fef8f8;
+  background-color: #e9d4d4;
 }
 
 /* 4 videos  */
@@ -90,7 +90,7 @@ body {
   display: flex;
   margin-left: 1%;
   border-width: 5px;
-  border-color: #111111;
+  border-color: #d9d3d3;
 }
 
 /* cards  */

@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.css";
 export default function contact() {
   return (
-    <div>
+    <div className='abc'>
       <section className="contactus" id="contactus">
 
 <div className="section-header">
