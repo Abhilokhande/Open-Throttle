@@ -1,36 +1,35 @@
-// Login.js
-
 import React, { useState } from 'react';
-import "./header.css";
-const Login = () => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
 
-  function handleLogin(e) {
-      e.preventDefault()
-      // Code to handle login goes here
-      props.toggle()
-  }
+const Login = ({ onLogin }) => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = () => {
+    // Add your login logic here
+    // You can validate the username and password and call onLogin if successful
+    if (username && password) {
+      onLogin(username);
+    }
+  };
 
   return (
-      <div className="popup">
-          <div className="popup-inner">
-              <h2>Login</h2>
-              <form onSubmit={handleLogin}>
-                  <label>
-                      Username:
-                      <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
-                  </label>
-                  <label>
-                      Password:
-                      <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
-                  </label>
-                  <button type="submit">Login</button>
-              </form>
-              <button onClick={props.toggle}>Close</button>
-          </div>
-      </div>
-  )
-}
+    <div>
+      <h2>Login</h2>
+      <input
+        type="text"
+        placeholder="Username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button onClick={handleLogin}>Login</button>
+    </div>
+  );
+};
 
 export default Login;

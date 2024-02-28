@@ -3,29 +3,33 @@ import './App.css';
 import Header from "./Mycomponent/Header";
 import Footer from './Mycomponent/footer';
 import Carousel from './Mycomponent/Carousel';
-import Link from './Mycomponent/link';
 import Video from './Mycomponent/video';
 import Showroom  from './Mycomponent/Showroom';
 import Image1 from './Mycomponent/image1';
 import Threeimage from './Mycomponent/threeimage';
 import React from "react";
 import Login from "./Mycomponent/Login";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// Import Login only once
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Switch from "react-router-dom";
 import Contact from './Mycomponent/contact';
 function App() {
   return (
     <>
+    <Router>
       <Header title="Open Throttle's"n1='Explore' n2='Login'n3='Signup'n4='' />
-      <Carousel/>
-      <Link l1='A' l2='B' l3='C' />
-      {/* <Video/> */}
-      <Image1/>
-      {/* <Login/> */}
-      <Threeimage/>
+      <div>
+        <Switch>
+          <Route path="/">
+          <Carousel/>
+           <Image1/>
+          <Threeimage/>
+        </Route>
+      </Switch>
+      </div>
       <Showroom/>
       <Contact/>
       <Footer/>
+      </Router>
       </>
   );
 }
