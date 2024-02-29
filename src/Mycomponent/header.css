@@ -1,6 +1,8 @@
 .navbar{
      color: rgb(24, 9, 9);
     margin: -8px;
+    position:sticky;
+    top: 0;
 }
 .nav-link
 {

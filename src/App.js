@@ -16,20 +16,11 @@ function App() {
     <>
     <Router>
       <Header title="Open Throttle's"n1='Explore' n2='Login'n3='Signup'n4='' />
-      {/* <div>
-        <Switch>
-          <Route path="/">
-          <Carousel/>
-           <Image1/>
-          <Threeimage/>
-        </Route>
-      </Switch>
-      </div> */}
-      {/* <Login/> */}
       <Carousel/>
            <Image1/>
           <Threeimage/>
       <Showroom/>
+      {/* <Login/> */}
       <Contact/>
       <Footer/>
       </Router>

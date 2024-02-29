@@ -25,7 +25,7 @@ export default function contact() {
 
                                 <div className="contact-info-content">
                                         <h4>Address</h4>
-                                        <p>Narayan Peth Badshah Boys,Pune-411041</p>
+                                        <p>Fergusson college campus,Pune</p>
                                 </div>
                         </div>
 
@@ -36,7 +36,7 @@ export default function contact() {
 
                                 <div className="contact-info-content">
                                         <h4>Phone</h4>
-                                        <p>8551069413</p>
+                                        <p>+91-9373633071</p>
                                 </div>
                         </div>
 
@@ -47,7 +47,7 @@ export default function contact() {
 
                                 <div className="contact-info-content">
                                         <h4>Email</h4>
-                                        <p>pranavgare123@gmail.com</p>
+                                        <p>openthrottles@gmail.com</p>
                                 </div>
                         </div>
                 </div>
