@@ -1,5 +1,6 @@
-import React from 'react';
+    import React from 'react';
 import "./header.css";
+import { Outlet, Link } from "react-router-dom";
 export default function Header(props) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ backgroundColor: 'black' }}  >
@@ -17,7 +18,7 @@ export default function Header(props) {
           <a className="nav-link" href="#">{props.n1}</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="./Login.js">{props.n2}</a>
+        <Link className="nav-link" to="/login">{props.n2}</Link>
         </li>
         {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
