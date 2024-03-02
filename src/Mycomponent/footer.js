@@ -1,5 +1,5 @@
 import React from 'react';
-import "./footer.css";
+// import "./footer.css";       
 import "./style.css";
 export default function Footer() {
   return (
@@ -8,17 +8,17 @@ export default function Footer() {
             <div className="footer-content">
                     <a href="#" className="logo-content flex">
                             <i className='bx bx-coffee logo-icon'></i>
-                            <span className="logo-text">Brand Bros</span>
+                            <span className="logo-text">Open Throttle's</span>
                     </a>
 
                     <p className="content-description">One-stop for all kind of influencer marketing
-                            services - #Brand Bros”</p>
+                            services - #Open Throttle's”</p>
 
                     <div className="footer-location flex">
                             <i className='bx bx-map map-icon'></i>
 
                             <div className="location-text">
-                                    Narayan Peth,Badshah Boys, Pune-411041
+                                  Fergusson college , Pune-411001
                             </div>
                     </div>
             </div>
@@ -27,20 +27,20 @@ export default function Footer() {
                     <ul className="footer-links">
                             <h4 className="footerLinks-title">Services</h4>
 
-                            <li><a href="#" className="footer-link">Instagram Influencer Marketing</a>
+                            <li><a href="#" className="footer-link">After sale srvices</a>
                             </li>
-                            <li><a href="#" className="footer-link">YouTube Influencer Marketing</a>
+                            <li><a href="#" className="footer-link">Insurance</a>
                             </li>
-                            <li><a href="#" className="footer-link">Twitter Influencer Marketing</a>
+                            <li><a href="#" className="footer-link">Customer Support</a>
                             </li>
-                            <li><a href="#" className="footer-link">Brand Placement</a></li>
+                            <li><a href="#" className="footer-link">24/7 Assistance</a></li>
                     </ul>
                     <ul className="footer-links" id="footer1">
                             <h4 className="footerLinks-title">Contact Us</h4>
 
-                            <li><a href="#" className="footer-link">Narayan Peth,Pune-411041</a></li>
-                            <li><a href="#" className="footer-link">pranavgare123@gmail.com</a></li>
-                            <li><a href="#" className="footer-link">8551069413</a></li>
+                            <li><a href="#" className="footer-link">Fergusson college,Pune-411001</a></li>
+                            <li><a href="#" className="footer-link">openthrottles123@gmail.com</a></li>
+                            <li><a href="#" className="footer-link">+19-9373633071</a></li>
                     </ul>
                     <ul className="footer-links">
                             <h4 className="footerLinks-title">Support</h4>
@@ -52,7 +52,7 @@ export default function Footer() {
                     </ul>
             </div>
     </div>
-    <div className="footer-copyRight">&#169; Brand Bros. All rigths reserved</div>
+    <div className="footer-copyRight">&#169; Open throttle's. All rigths reserved</div>
 </footer>
   )
 }
