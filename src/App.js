@@ -8,13 +8,16 @@ import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
 import Switch from "react-router-dom";
 import Contact from './Mycomponent/contact';
 import Main from './Mycomponent/Main';
+import Mainlogin from './Mycomponent/Mainlogin';
+import CreateAccount from './Mycomponent/CreateAccount';
 function App() {
   return (
     <>
     <Router>
       <Routes>
-    <Route path="login" element={<Login/>} />
+    <Route path="login" element={<Mainlogin/>} />
       <Route path="/" element={<Main/>}/>
+      <Route path="createaccount" element={<CreateAccount/>}/>
      </Routes>
       </Router>
       </>

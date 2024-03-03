@@ -1,6 +1,6 @@
     import React from 'react';
 import "./header.css";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 export default function Header(props) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ backgroundColor: 'black' }}  >
@@ -15,11 +15,12 @@ export default function Header(props) {
           {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">{props.n1}</a>
+          <Link className="nav-link" to={props.A1}>{props.n1}</Link>
         </li>
         <li className="nav-item">
         <Link className="nav-link" to="/login">{props.n2}</Link>
         </li>
+        
         {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           {props.n2}

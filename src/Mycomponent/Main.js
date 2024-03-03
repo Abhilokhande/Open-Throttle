@@ -9,9 +9,10 @@ import Footer from './footer';
 export default function Main() {
   return (
     <div>
-        <Header title="Open Throttle's"n1='Explore' n2='Login'n3='Signup'n4='' />
+        <Header title="Open Throttle's" n2='Login' />
       <Carousel/>
            <Image1/>
+           <Header n1='Motorcycles'/>
           <Threeimage/>
       <Showroom/>
       <Contact/>
