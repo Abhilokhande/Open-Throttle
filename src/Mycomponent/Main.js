@@ -12,7 +12,7 @@ export default function Main() {
         <Header title="Open Throttle's" n2='Login' />
       <Carousel/>
            <Image1/>
-           <Header n1='Motorcycles'/>
+           <Header n1='Motorcycles' A1="/motorcycles"/>
           <Threeimage/>
       <Showroom/>
       <Contact/>

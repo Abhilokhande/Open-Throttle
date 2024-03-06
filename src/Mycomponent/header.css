@@ -1,7 +1,7 @@
 .navbar{
      color: rgb(24, 9, 9);
     margin: 0px;
-    position:sticky;
+    /* position:sticky; */
     top: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -141,5 +141,29 @@ a.nav-item{
     object-fit: cover;
     z-index: -1; /* Ensure the image is behind other content */
   }
-  
-  
+  /*create account*/
+  .form-label{
+    color: #ccc;
+  }
+  /* brand page css */
+  .card-body{
+    background-color: rgb(28, 27, 27);
+  }
+  .card-title{
+    color: #ffffff;
+  }
+  .card-text{
+    color: #da190b;
+  }
+  .link1{
+    background-color:black;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 8%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .link1:hover{
+    background-color: #ef0d0d85; 
+  }

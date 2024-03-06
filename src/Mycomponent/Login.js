@@ -3,6 +3,8 @@ import './Login.css'; // Import your CSS file for styling
 import Header from './Header';
 import Footer from './footer';
 import Contact from './contact';
+import CreateAccount from './CreateAccount';
+import { Link } from 'react-router-dom';
 const Login = () => {
   return (<>
   {/* <Header/> */}
@@ -14,6 +16,8 @@ const Login = () => {
         <label>Password</label>
         <input type="password" name="password" placeholder="Enter Password" />
         <input type="submit" name="submit" value="Login" />
+        {/* <input className='button' type="submit" name="create" value="Sign In" onClick={Link to}/> */}
+        <Link className="link" to='/createaccount'>Sign In</Link>
       </form>
     </div>
     {/* <Contact/>

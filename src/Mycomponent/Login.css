@@ -32,10 +32,24 @@
     background-color: #4CAF50;
     color: #fff;
     padding: 12px 20px;
+    margin: 8%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
-  input[type="submit"]:hover {
-    background-color: #45a049;
+  .link{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    margin: 8%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
+  .link:hover{
+    background-color: #111211; 
+  }
+  input[type="submit"]:hover {
+    background-color: #111211;
+  }
+  

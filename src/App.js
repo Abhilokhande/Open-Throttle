@@ -10,6 +10,9 @@ import Contact from './Mycomponent/contact';
 import Main from './Mycomponent/Main';
 import Mainlogin from './Mycomponent/Mainlogin';
 import CreateAccount from './Mycomponent/CreateAccount';
+import Motorcycles from './Mycomponent/Motorcycles';
+import Brand from './Mycomponent/Brand';
+import Model from './Mycomponent/Model';
 function App() {
   return (
     <>
@@ -18,6 +21,9 @@ function App() {
     <Route path="login" element={<Mainlogin/>} />
       <Route path="/" element={<Main/>}/>
       <Route path="createaccount" element={<CreateAccount/>}/>
+      <Route path="motorcycles" element={<Motorcycles/>}/>
+      <Route path="bike" element={<Model/>}/>
+      <Route path="brand" element={<Brand/>}/>
      </Routes>
       </Router>
       </>
