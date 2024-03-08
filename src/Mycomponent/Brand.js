@@ -4,7 +4,15 @@ import Header from './Header'
 import Footer from './footer'
 import { Link } from 'react-router-dom';
 export default function Brand(props) {
-    const t=props.t;  
+  const bikesData = [
+    {
+      id: 1,
+      imageSrc: '/Image/bullet-350.jpg',
+      imageTitle: 'Bullet 350',
+      lastUpdated: 'Last updated 3 mins ago',
+    },
+    // Add more bike data as needed
+  ];
     return (<>
     <div>
       <Header  title="ROYAL ENFIELD"/>
@@ -13,13 +21,13 @@ export default function Brand(props) {
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="ride  ">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src={process.env.PUBLIC_URL + '/Image/b1.jpg'}class="d-block w-100" alt="..."/>
+      <img src={process.env.PUBLIC_URL + '/Image/b3.jpg'}class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
       <img src={process.env.PUBLIC_URL + '/Image/b2.jpg'} class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src={process.env.PUBLIC_URL + '/Image/b3.jpg'} class="d-block w-100" alt="..."/>
+      <img src={process.env.PUBLIC_URL + '/Image/b1.jpg'} class="d-block w-100" alt="..."/>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -49,10 +57,10 @@ export default function Brand(props) {
   <div className="card"><Link to={{
      pathname: "/bike",
     state: {
-        imageSrc: process.env.PUBLIC_URL + '/Image/bullet-350.jpg',
-        imageTitle: "Bullet 350",
-        lastUpdated: "Last updated 3 mins ago"
-        // Add other props as needed
+      id: 1,
+      imageSrc: '/Image/bullet-350.jpg',
+      imageTitle: 'Bullet 350',
+      lastUpdated: 'Last updated 3 mins ago',
     }}}>
     <img src={process.env.PUBLIC_URL + '/Image/bullet-350.jpg'} className="card-img-top" alt="..."/></Link> 
     <div className="card-body">

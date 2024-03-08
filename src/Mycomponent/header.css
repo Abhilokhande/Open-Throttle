@@ -167,3 +167,15 @@ a.nav-item{
   .link1:hover{
     background-color: #ef0d0d85; 
   }
+  /* model info */
+ .aboutR{
+  margin:30px;
+  font-family: cursive;
+ }
+  .h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .sp{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+  }
