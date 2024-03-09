@@ -13,7 +13,7 @@
           margin: 0 0 20px 0;
           text-align: center;
           margin-top: 10px;
-          color: #333;
+          color:white;
         
   }
   label {
@@ -29,7 +29,7 @@
     border-radius: 4px;
   }
   input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #eb0a02;
     color: #fff;
     padding: 12px 20px;
     margin: 8%;
@@ -38,7 +38,7 @@
     cursor: pointer;
   }
   .link{
-    background-color: #4CAF50;
+    background-color: #f71818;
     color: #fff;
     padding: 12px 20px;
     margin: 8%;
@@ -52,4 +52,5 @@
   input[type="submit"]:hover {
     background-color: #111211;
   }
+
   

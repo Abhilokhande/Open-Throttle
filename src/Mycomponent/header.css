@@ -179,3 +179,12 @@ a.nav-item{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
   }
+/* createaccount css */
+.createacc{
+  margin: 60px;
+  margin-left: 150px;
+  margin-right: 190px;
+}
+label{
+  color: #bc0f0f;
+}

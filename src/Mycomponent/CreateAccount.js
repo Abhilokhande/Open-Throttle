@@ -2,84 +2,93 @@
     import Header from './Header'
     import Footer from './footer'
     import Contact from './contact'
+    import "./header.css";
     export default function CreateAccount() {
-            return(<><Header title="Open Throttle's"/>
-        <div className="background-page">
-        <img src={process.env.PUBLIC_URL + '/login.jpg'}  alt="Background" className="background-image" />
-        {/* <section class="vh-100" style={{backgroundColor:"gray"}}> */}
-    <div class="container h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-lg-12 col-xl-11">
-            <div class="card text-black" style={{borderRadius:"25px"}}>
-            <div class="card-body p-md-5">
-                <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-
-                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-
-                    <form class="mx-1 mx-md-4">
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                        <input type="text" id="form3Example1c" class="form-control" />
-                        <label class="form-label" for="form3Example1c">Your Name</label>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                        <input type="email" id="form3Example3c" class="form-control" />
-                        <label class="form-label" for="form3Example3c">Your Email</label>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                        <input type="password" id="form3Example4c" class="form-control" />
-                        <label class="form-label" for="form3Example4c">Password</label>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                        <input type="password" id="form3Example4cd" class="form-control" />
-                        <label class="form-label" for="form3Example4cd">Repeat your password</label>
-                        </div>
-                    </div>
-
-                    <div class="form-check d-flex justify-content-center mb-5">
-                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                        <label class="form-check-label" for="form2Example3">
-                        I agree all statements in <a href="#!">Terms of service</a>
-                        </label>
-                    </div>
-
-                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                        <button type="button" class="btn btn-primary btn-lg">Register</button>
-                    </div>
-
-                    </form>
-
-                </div>
-                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
-                    class="img-fluid" alt="Sample image"/>
-
-                </div>
-                </div>
+            return(
+    <>
+            <Header title="Open Throttle's"/>
+            <div className="background-page">
+            <img src={process.env.PUBLIC_URL + '/login.jpg'}  alt="Background" className="background-image" />
+            <div className='createacc'>
+                <h1>Sign up for Royal Enfield</h1>
+                <form class="row g-3">
+  <div class="col-md-4">
+    <label for="validationServer01" class="form-label">First name</label>
+    <input type="textbox" class="form-control is-valid" id="validationServer01" placeholder='Name' required/>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div><br/>       
+  <div class="col-md-4">
+    <label for="validationServer02" class="form-label">Last name</label>
+    <input type="textbox" class="form-control is-valid" id="validationServer02"placeholder='Surname' required/>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div><br/>
+  <div class="col-md-4">
+    <label for="validationServerUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend3">@</span>
+      <input type="texboxt" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder='username' required/>
+      <div id="validationServerUsernameFeedback" class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div><br/>
+  <div class="col-md-4">
+    <label for="validationServer02" class="form-label">Email</label>
+    <input type="email" class="form-control is-valid" id="validationServer02"placeholder='Enter your Active email' required/>
+    <div  id="validationServer03Feedback" class="invalid-feedback">
+     valid Email
+    </div>
+  </div><br/>
+  <div class="col-md-4" style={{marginLeft:390}}>
+    <label for="validationServer02" class="form-label">Password</label>
+    <input type="textbox" class="form-control is-valid" id="validationServer02"placeholder='Create Strong password' required/>
+    <div  id="validationServer03Feedback" class="invalid-feedback">
+    Password
+    </div>
+  </div><br/>
+  <div class="col-md-6" style={{marginTop:50}}><h3 style={{color:'white'}}>Gender</h3>
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
+  <label style={{color:'white'}}  class="form-check-label" for="inlineRadio1">Male</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"/>
+  <label style={{color:'white'}} class="form-check-label" for="inlineRadio2">Female</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"/>
+  <label style={{color:'white'}} class="form-check-label" for="inlineRadio3">Other</label>
+</div>
+  </div>
+  <div class="col-md-6"style={{marginLeft:1}}>
+    <label  for="validationServer03" class="form-label">City</label>
+    <input type="textbox" class="form-control is-invalid" id="validationServer03" placeholder='City' aria-describedby="validationServer03Feedback" required/>
+    <div id="validationServer03Feedback" class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div><br/>
+  <div class="col-md-6">
+    <label for="validationServer04" class="form-label">State</label>
+    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required   >
+      <option selected disabled value="">Choose...</option>
+      <option>Maharashtra</option>
+    </select>
+    <div id="validationServer04Feedback" class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>    <br/>
+  <div class="col-12">
+   <h1><button class="btn btn-primary" type="submit" style={{background:'rgba(255, 255, 255, 0.5)',borderRadius:0,color:'red', fontSize:'20px'}}>Submit</button></h1>
+  </div>
+</form>
             </div>
             </div>
-        </div>
-        </div>
-    </div>
-    {/* </section> */}
-    </div>
-    <Contact/>
-    <Footer/>
-    </>  )
+            <Contact/>
+            <Footer/>
+    </>  
+    )
     }
