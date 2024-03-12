@@ -15,10 +15,10 @@ export default function Header(props) {
           {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to={props.A1}>{props.n1}</Link>
+          <Link className="nav-link" style={{margin:10}} to={props.ln1  }>{props.n1}</Link>
         </li>
         <li className="nav-item">
-        <Link className="nav-link" to="/login">{props.n2}</Link>
+        <Link className="nav-link" style={{margin:10}} to={props.ln2}>{props.n2}</Link>
         </li>
         
         {/* <li className="nav-item dropdown">
@@ -31,7 +31,16 @@ export default function Header(props) {
             <li><hr className="dropdown-divider"/></li>
             <li><a className="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </li> */}
+        </li>  */}
+        <div class="dropdown">
+  <Link class="nav-link"  style={{margin:10}} data-bs-toggle="dropdown" aria-expanded="false">
+    {props.drop}
+  </Link>
+  <ul class="dropdown-menu" style={{backgroundColor:'transparent', padding:15}}>
+    <li> <Link className="droplink" style={{padding:5, fontSize:20,color:'white', marginBottom:10}} to="/login">User</Link></li>
+    <li> <Link className="droplink"  style={{fontSize:20,color:'White', marginTop:20}} to="/addminlogin">Admin</Link></li>
+  </ul>
+</div>
         <li className="nav-item">
           <a className="nav-link"href="#">{props.n3}</a>
         </li>

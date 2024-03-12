@@ -45,7 +45,7 @@ export default function Brand(props) {
   <div class="card-header">
     Royal Enfield
   </div>
-  <div class="card-body">
+  <div class="card-body" style={{border:'none'}}>
     <h5 class="card-title">Welcome to Open Throttle's</h5>
     <p class="card-text">To get more info about bikes and bokking process create a account or if have a account login to it.</p>
     <Link className="link1" to='/createaccount'>Sign In</Link>
@@ -54,7 +54,7 @@ export default function Brand(props) {
 </div>
         </div>
       <div className="card-group">
-  <div className="card"><Link to={{
+  <div className="card" style={{border:'none'}}><Link to={{
      pathname: "/bike",
     state: {
       id: 1,
@@ -63,38 +63,38 @@ export default function Brand(props) {
       lastUpdated: 'Last updated 3 mins ago',
     }}}>
     <img src={process.env.PUBLIC_URL + '/Image/bullet-350.jpg'} className="card-img-top" alt="..."/></Link> 
-    <div className="card-body">
-      <h5 className="card-title">BULLET - 350</h5>
+    <div className="card-body" style={{border:'none'}}>
+      <h5 className="card-title" style={{textAlign:'center'}}>BULLET - 350</h5>
       {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
     </div>
       {/* <div className="card-footer">
         <small className="text-body-secondary">Last updated 3 mins ago</small>
       </div> */}
   </div>
-  <div className="card">
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/shotgun.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">SHOTGUN</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>SHOTGUN</h5>
       {/* <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p> */}
     </div>
     {/* <div className="card-footer">
       <small className="text-body-secondary">Last updated 3 mins ago</small>
     </div> */}
   </div>
-  <div className="card">
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/classic-350.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">CLASSIC - 350</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>CLASSIC - 350</h5>
       {/* <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p> */}
     </div>
     {/* <div className="card-footer">
       <small className="text-body-secondary">Last updated 3 mins ago</small>
     </div> */}
   </div>
-  <div className="card">
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/int-650.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">INT-650</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>INT-650</h5>
       {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p> */}
     </div>
     {/* <div className="card-footer">
@@ -102,41 +102,41 @@ export default function Brand(props) {
     </div> */}
   </div>
 </div>
-<div className="card-group">
-  <div className="card">
+<div className="card-group" >
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/scram-411.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">SCRAM -411</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>SCRAM -411</h5>
       {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
     </div>
       {/* <div className="card-footer">
         <small className="text-body-secondary">Last updated 3 mins ago</small>
       </div> */}
   </div>
-  <div className="card">
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/super-meteor-650.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">SUPER-METEOR-650</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>SUPER-METEOR-650</h5>
       {/* <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p> */}
     </div>
     {/* <div className="card-footer">
       <small className="text-body-secondary">Last updated 3 mins ago</small>
     </div> */}
   </div>
-  <div className="card">
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/meteor-350.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">METEOR-350</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>METEOR-350</h5>
       {/* <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p> */}
     </div>
     {/* <div className="card-footer">
       <small className="text-body-secondary">Last updated 3 mins ago</small>
     </div> */}
   </div>
-  <div className="card">
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/continental-gt.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">CONTINENTAL-GT</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>CONTINENTAL-GT</h5>
       {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p> */}
     </div>
     {/* <div className="card-footer">
@@ -144,41 +144,41 @@ export default function Brand(props) {
     </div> */}
   </div>
 </div>
-<div className="card-group">
-  <div className="card">
+<div className="card-group" >
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/bullet-350.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">BULLET</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>BULLET</h5>
       {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
     </div>
       {/* <div className="card-footer">
         <small className="text-body-secondary">Last updated 3 mins ago</small>
       </div> */}
   </div>
-  <div className="card">
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/classic-350.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">CLASSIC</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>CLASSIC</h5>
       {/* <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p> */}
     </div>
     {/* <div className="card-footer">
       <small className="text-body-secondary">Last updated 3 mins ago</small>
     </div> */}
   </div>
-  <div className="card">
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/hunter-350.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">HUNTER-350</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>HUNTER-350</h5>
       {/* <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p> */}
     </div>
     {/* <div className="card-footer">
       <small className="text-body-secondary">Last updated 3 mins ago</small>
     </div> */}
   </div>
-  <div className="card">
+  <div className="card" style={{border:'none'}}>
     <img src={process.env.PUBLIC_URL + '/Image/himalayan.jpg'} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">HIMALAYAN</h5>
+      <h5 className="card-title" style={{textAlign:'center'}}>HIMALAYAN</h5>
       {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p> */}
     </div>
     {/* <div className="card-footer">

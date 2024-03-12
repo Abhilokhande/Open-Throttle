@@ -13,6 +13,8 @@ import CreateAccount from './Mycomponent/CreateAccount';
 import Motorcycles from './Mycomponent/Motorcycles';
 import Brand from './Mycomponent/Brand';
 import Model from './Mycomponent/Model';
+import Location from './Mycomponent/Location';
+import Addminlogin from './Mycomponent/Addminlogin';
 function App() {
   return (
     <>
@@ -24,6 +26,8 @@ function App() {
       <Route path="motorcycles" element={<Motorcycles/>}/>
       <Route path="bike" element={<Model/>}/>
       <Route path="brand" element={<Brand/>}/>
+      <Route path="locate" element={<Location/>}/>
+      <Route path='addminlogin' element={<Addminlogin/>}/>
      </Routes>
       </Router>
       </>
