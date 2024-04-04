@@ -15,9 +15,13 @@ import Brand from './Mycomponent/Brand';
 import Model from './Mycomponent/Model';
 import Location from './Mycomponent/Location';
 import Addminlogin from './Mycomponent/Addminlogin';
+import Book from './Mycomponent/Book';
+// import Navbar from "./component/navbar";
+
 function App() {
   return (
     <>
+    {/* <Navbar/>  */}
     <Router>
       <Routes>
     <Route path="login" element={<Mainlogin/>} />
@@ -28,6 +32,8 @@ function App() {
       <Route path="brand" element={<Brand/>}/>
       <Route path="locate" element={<Location/>}/>
       <Route path='addminlogin' element={<Addminlogin/>}/>
+      <Route path='book' element={<Book/>}/>
+      {/* <Route path='navbar' element={<Navbar/>}/> */}
      </Routes>
       </Router>
       </>

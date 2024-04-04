@@ -29,7 +29,7 @@ export default function Bike(props) {
   <img src={process.env.PUBLIC_URL + '/Image/b2.jpg'} class="card-img" alt="..."/>
   <div class="card-img-overlay">
   <div style={containerStyle}>
-    <Link className="nav-link" style={buttonStyle} to={{pathname:'/'}}>Book Me..</Link>
+    <Link className="nav-link" style={buttonStyle} to={{pathname:'/book'}}>Book Me..</Link>
     </div>
      </div>
 </div>

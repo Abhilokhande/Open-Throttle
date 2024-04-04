@@ -1,9 +1,44 @@
-    import React from 'react'
+    import React,{useEffect,useState} from 'react'
+    import axios from "axios"
     import Header from './Header'
     import Footer from './footer'
     import Contact from './contact'
     import "./header.css";
+    import { Link, useNavigate } from 'react-router-dom';
     export default function CreateAccount() {
+     
+
+  const [Fname,setFname]=useState('')
+  const [Lname,setLname]=useState('')
+  const [Email,setEmail]=useState('')
+  const [City,setCity]=useState('')
+  const [userName,setName]=useState('')
+  const [password,setPassword]=useState('')
+
+  async function submit(e){
+    e.preventDefault();
+    try{
+      await  axios.post("http://localhost:3000/createaccount",{
+        userName,password,Fname,Lname,Email,City
+      })
+      .then(
+        res=>{
+          if(res.data="exist"){
+           alert("User alredy exist....")
+          }
+          else if(res.data="notexist"){
+            alert("user have not sign in ")
+           }
+        }
+      )
+      .catch(e=>{
+        alert("wrong details")
+        console.log(e)
+      })
+    }catch(e){
+      console.log(e);
+    }
+  }
             return(
     <>
             <Header title="Open Throttle's"/>
@@ -14,14 +49,14 @@
                 <form class="row g-3">
   <div class="col-md-4">
     <label for="validationServer01" class="form-label">First name</label>
-    <input type="textbox" class="form-control is-valid" id="validationServer01" placeholder='Name' required/>
+    <input type="textbox" class="form-control is-valid"  onChange={(e)=>{setFname(e.target.value)}} id="validationServer01" placeholder='Name' required/>
     <div class="valid-feedback">
       Looks good!
     </div>
   </div><br/>       
   <div class="col-md-4">
     <label for="validationServer02" class="form-label">Last name</label>
-    <input type="textbox" class="form-control is-valid" id="validationServer02"placeholder='Surname' required/>
+    <input type="textbox" class="form-control is-valid" onChange={(e)=>{setLname(e.target.value)}} id="validationServer02"placeholder='Surname' required/>
     <div class="valid-feedback">
       Looks good!
     </div>
@@ -30,7 +65,7 @@
     <label for="validationServerUsername" class="form-label">Username</label>
     <div class="input-group has-validation">
       <span class="input-group-text" id="inputGroupPrepend3">@</span>
-      <input type="texboxt" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder='username' required/>
+      <input type="texboxt" class="form-control is-invalid"  onChange={(e)=>{setName(e.target.value)}} id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder='username' required/>
       <div id="validationServerUsernameFeedback" class="invalid-feedback">
         Please choose a username.
       </div>
@@ -38,14 +73,14 @@
   </div><br/>
   <div class="col-md-4">
     <label for="validationServer02" class="form-label">Email</label>
-    <input type="email" class="form-control is-valid" id="validationServer02"placeholder='Enter your Active email' required/>
+    <input type="email" class="form-control is-valid" onChange={(e)=>{setEmail(e.target.value)}} id="validationServer02"placeholder='Enter your Active email' required/>
     <div  id="validationServer03Feedback" class="invalid-feedback">
      valid Email
     </div>
   </div><br/>
   <div class="col-md-4" style={{marginLeft:390}}>
     <label for="validationServer02" class="form-label">Password</label>
-    <input type="textbox" class="form-control is-valid" id="validationServer02"placeholder='Create Strong password' required/>
+    <input type="textbox" class="form-control is-valid" onChange={(e)=>{setPassword(e.target.value)}} id="validationServer02"placeholder='Create Strong password' required/>
     <div  id="validationServer03Feedback" class="invalid-feedback">
     Password
     </div>
@@ -66,7 +101,7 @@
   </div>
   <div class="col-md-6"style={{marginLeft:1}}>
     <label  for="validationServer03" class="form-label">City</label>
-    <input type="textbox" class="form-control is-invalid" id="validationServer03" placeholder='City' aria-describedby="validationServer03Feedback" required/>
+    <input type="textbox" class="form-control is-invalid" id="validationServer03" onChange={(e)=>{setCity(e.target.value)}} placeholder='City' aria-describedby="validationServer03Feedback" required/>
     <div id="validationServer03Feedback" class="invalid-feedback">
       Please provide a valid city.
     </div>
