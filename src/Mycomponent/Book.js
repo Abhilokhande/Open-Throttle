@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react';
+import axios from 'axios';
 import Header from './Header'
 import Footer from './footer'
 import Contact from './contact'
 export default function Book() {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('/send-email', { email });
+      alert('Email sent successfully!');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Error sending email. Please try again later.');
+    }
+  };
   return (
     <div>
          <Header title="Open Throttle's" n2='Sign In' ln2='/createaccount' drop="Login"/>
@@ -11,7 +24,7 @@ export default function Book() {
   <div style={{backgroundColor: 'rgba(255, 255, 255, 0.5)'}}>
   <div class="card-img-overlay">
   <h1 style={{color:'White',fontStyle:'Bold'}}>Welcome to the booking page.</h1>
-  <form class="row g-3">
+  <form class="row g-3" onSubmit={handleSubmit}>
   <div class="col-md-4">
     <label for="validationServer01" class="form-label">First name</label>
     <input type="textbox" class="form-control is-valid" id="validationServer01" placeholder='Name' required/>
@@ -38,7 +51,8 @@ export default function Book() {
   </div><br/>
   <div class="col-md-4">
     <label for="validationServer02" class="form-label">Email</label>
-    <input type="email" class="form-control is-valid"  id="validationServer02"placeholder='Enter your Active email' required/>
+    <input type="email" class="form-control is-valid" value={email}
+          onChange={(e) => setEmail(e.target.value)}  id="validationServer02"placeholder='Enter your Active email' required/>
     <div  id="validationServer03Feedback" class="invalid-feedback">
      valid Email
     </div>
