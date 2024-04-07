@@ -26,14 +26,14 @@ export default function Motorcycles(props) {
     <div>
         <Header title="OPEN THROTTLE'S"/>
 
-        <div class="card text-bg-dark">
-  <img src="./Royal.jpg" class="card-img" alt="..."/>
-  <div class="card-img-overlay">
-    <h5 class="card-title"  style={{fontSize:"50px", justifyContent:'center', alignItems:'center', display:'flex',color:"white"}}>ROYAL ENFIELD</h5>
+        <div className="card text-bg-dark">
+  <img src="./Royal.jpg" className="card-img" alt="..."/>
+  <div className="card-img-overlay">
+    <h5 className="card-title"  style={{fontSize:"50px", justifyContent:'center', alignItems:'center', display:'flex',color:"white"}}>ROYAL ENFIELD</h5>
     <div style={containerStyle}>
     <Link className="nav-link" style={buttonStyle} to={{pathname:'/brand',props:{t}}}>Know more..</Link>
     </div>
-    <p class="card-text"></p>
+    <p className="card-text"></p>
   </div>
 </div>
         <Footer/>

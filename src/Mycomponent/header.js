@@ -32,11 +32,11 @@ export default function Header(props) {
             <li><a className="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>  */}
-        <div class="dropdown">
-  <Link class="nav-link"  style={{margin:10}} data-bs-toggle="dropdown" aria-expanded="false">
+        <div className="dropdown">
+  <Link className="nav-link"  style={{margin:10}} data-bs-toggle="dropdown" aria-expanded="false">
     {props.drop}
   </Link>
-  <ul class="dropdown-menu" style={{backgroundColor:'transparent', padding:15}}>
+  <ul className="dropdown-menu" style={{backgroundColor:'transparent', padding:15}}>
     <li> <Link className="droplink" style={{padding:5, fontSize:20,color:'white', marginBottom:10}} to="/login">User</Link></li>
     <li> <Link className="droplink"  style={{fontSize:20,color:'White', marginTop:20}} to="/addminlogin">Admin</Link></li>
   </ul>

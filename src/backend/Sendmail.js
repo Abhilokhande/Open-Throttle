@@ -9,7 +9,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // Nodemailer setup
-const transporter = nodemailer.createTransport({npm install express body-parser nodemailer
+const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'abhijeetlokhande2580@gmail.com', // your email

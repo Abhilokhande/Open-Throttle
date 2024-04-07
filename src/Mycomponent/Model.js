@@ -25,10 +25,10 @@ export default function Bike(props) {
   return (
   <>
       <Header title="BULLET-350"/>
-<div class="card text-bg-dark">
-  <img src={process.env.PUBLIC_URL + '/Image/b2.jpg'} class="card-img" alt="..."/>
-  <div class="card-img-overlay">
-  <div style={containerStyle}>
+<div className="card text-bg-dark">
+  <img src={process.env.PUBLIC_URL + '/Image/b2.jpg'} className="card-img" alt="..."/>
+  <div className="card-img-overlay">
+  <div style={  containerStyle}>
     <Link className="nav-link" style={buttonStyle} to={{pathname:'/book'}}>Book Me..</Link>
     </div>
      </div>

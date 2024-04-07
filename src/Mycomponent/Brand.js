@@ -18,36 +18,36 @@ export default function Brand(props) {
       <Header  title="ROYAL ENFIELD"/>
         </div>
         <div>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="ride  ">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src={process.env.PUBLIC_URL + '/Image/b3.jpg'}class="d-block w-100" alt="..."/>
+        <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="ride  ">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src={process.env.PUBLIC_URL + '/Image/b3.jpg'}className="d-block w-100" alt="..."/>
     </div>
-    <div class="carousel-item">
-      <img src={process.env.PUBLIC_URL + '/Image/b2.jpg'} class="d-block w-100" alt="..."/>
+    <div className="carousel-item">
+      <img src={process.env.PUBLIC_URL + '/Image/b2.jpg'} className="d-block w-100" alt="..."/>
     </div>
-    <div class="carousel-item">
-      <img src={process.env.PUBLIC_URL + '/Image/b1.jpg'} class="d-block w-100" alt="..."/>
+    <div className="carousel-item">
+      <img src={process.env.PUBLIC_URL + '/Image/b1.jpg'} className="d-block w-100" alt="..."/>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
   </button>
 </div>
         </div>
         <div>
-        <div class="card text-center">
-  <div class="card-header">
+        <div className="card text-center">
+  <div className="card-header">
     Royal Enfield
   </div>
-  <div class="card-body" style={{border:'none'}}>
-    <h5 class="card-title">Welcome to Open Throttle's</h5>
-    <p class="card-text">To get more info about bikes and bokking process create a account or if have a account login to it.</p>
+  <div className="card-body" style={{border:'none'}}>
+    <h5 className="card-title">Welcome to Open Throttle's</h5>
+    <p className="card-text">To get more info about bikes and bokking process create a account or if have a account login to it.</p>
     <Link className="link1" to='/createaccount'>Sign In</Link>
     <Link className="link1" to='/login'>Login</Link>
   </div>
