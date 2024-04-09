@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from "./Mycomponent/Header";
-import Footer from './Mycomponent/footer';
+// import Header from "./Mycomponent/Header";
+// import Footer from './Mycomponent/footer';
 import React from "react";
-import Login from "./Mycomponent/Login";
+// import Login from "./Mycomponent/Login";
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
-import Switch from "react-router-dom";
-import Contact from './Mycomponent/contact';
+// import Switch from "react-router-dom";
+// import Contact from './Mycomponent/contact';
 import Main from './Mycomponent/Main';
 import Mainlogin from './Mycomponent/Mainlogin';
 import CreateAccount from './Mycomponent/CreateAccount';

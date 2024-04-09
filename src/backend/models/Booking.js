@@ -4,8 +4,7 @@ const mongoose=require('mongoose')
     Lname:String,
     Email:String,
     City:String,
-    UserName:String,
-    Password:String
+    UserName:String
  })
- const UserModel = mongoose.model("Booking",UserSchema)
- module.exports=UserModel
+ const BookingModel = mongoose.model("Book",UserSchema)
+ module.exports=BookingModel

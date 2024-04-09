@@ -5,39 +5,45 @@ import Footer from './footer'
 import Contact from './contact'
 import { Link, useNavigate } from 'react-router-dom';
 export default function Book() {
-  const [Email, setEmail] = useState('');
+  // const [Email, setEmail] = useState('');
 
-  const handleSubmit = async (e) => {
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     await axios.post('/send-email', { Email });
+  //     alert('Email sent successfully!');
+  //   } catch (error) {
+  //     console.error('Error sending email:', error);
+  //     alert('Error sending email. Please try again later.');
+  //   }
+  // };
+  const [Fname, setFname] = useState('');
+  const [Lname, setLname] = useState('');
+  const [Email, setEmail] = useState('');
+  const [City, setCity] = useState('');
+  const [UserName, setName] = useState('');
+  const navigate = useNavigate();
+
+  const submit = (e) => {
     e.preventDefault();
-    try {
-      await axios.post('/send-email', { Email });
-      alert('Email sent successfully!');
-    } catch (error) {
-      console.error('Error sending email:', error);
-      alert('Error sending email. Please try again later.');
-    }
+    axios
+      .post("http://localhost:3002/Booking", {
+        UserName,
+        Fname,
+        Lname,
+        Email,
+        City
+      })
+      .then((result) => {
+        console.log(result);
+        navigate('/');
+        alert("Booking successful! We will contact you within two working days.");
+      })
+      .catch((error) => {
+        console.error("Error submitting booking:", error);
+        alert("An error occurred while submitting your booking. Please try again later.");
+      });
   };
-  const navigate=useNavigate()
-  const [Fname,setFname]=useState('')
-  const [Lname,setLname]=useState('')
-  const [City,setCity]=useState('')
-  const [UserName,setName]=useState('')
-  const submit=(e)=>{
-    e.preventDefault();
-        axios.post("http://localhost:3001/Booking",{
-        UserName,Password,Fname,Lname,Email,City
-      })
-      .then(
-        result=>{console.log(result)
-          navigate('/')
-          alert("Booking sucessfull we will contect you in two working days");
-        }
-      )
-      .catch(e=>{
-        alert("wrong details")
-        console.log(e)
-      })
-  }
   return (
     <div>
          <Header title="Open Throttle's" n2='Sign In' ln2='/createaccount' drop="Login"/>
