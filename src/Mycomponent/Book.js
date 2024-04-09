@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './Header'
 import Footer from './footer'
 import Contact from './contact'
+import { Link, useNavigate } from 'react-router-dom';
 export default function Book() {
   const [Email, setEmail] = useState('');
 
@@ -21,7 +22,6 @@ export default function Book() {
   const [Lname,setLname]=useState('')
   const [City,setCity]=useState('')
   const [UserName,setName]=useState('')
-  const [Password,setPassword]=useState('')
   const submit=(e)=>{
     e.preventDefault();
         axios.post("http://localhost:3001/Booking",{
@@ -30,6 +30,7 @@ export default function Book() {
       .then(
         result=>{console.log(result)
           navigate('/')
+          alert("Booking sucessfull we will contect you in two working days");
         }
       )
       .catch(e=>{
@@ -45,17 +46,17 @@ export default function Book() {
   <div style={{backgroundColor: 'rgba(255, 255, 255, 0.5)'}}>
   <div className="card-img-overlay">
   <h1 style={{color:'White',fontStyle:'Bold'}}>Welcome to the booking page.</h1>
-  <form className="row g-3" onSubmit={handleSubmit}>
+  <form className="row g-3" onSubmit={submit}>
   <div className="col-md-4">
     <label for="validationServer01" className="form-label">First name</label>
-    <input type="textbox" className="form-control is-valid" id="validationServer01" placeholder='Name' required={true}/>
+    <input type="textbox" className="form-control is-valid" onChange={(e)=>{setFname(e.target.value)}} id="validationServer01" placeholder='Name' required={true}/>
     <div className="valid-feedback">
       Looks good!
     </div>
   </div><br/>       
   <div className="col-md-4">
     <label for="validationServer02" className="form-label">Last name</label>
-    <input type="textbox" className="form-control is-valid"  id="validationServer02"placeholder='Surname' required={true}/>
+    <input type="textbox" className="form-control is-valid" onChange={(e)=>{setLname(e.target.value)}}  id="validationServer02"placeholder='Surname' required={true}/>
     <div className="valid-feedback">
       Looks good!
     </div>
@@ -64,7 +65,7 @@ export default function Book() {
     <label for="validationServerUsername" className="form-label">Username</label>
     <div className="input-group has-validation">
       <span className="input-group-text" id="inputGroupPrepend3">@</span>
-      <input type="texboxt" className="form-control is-invalid"  id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder='username' required={true}/>
+      <input type="texboxt" className="form-control is-invalid" onChange={(e)=>{setName(e.target.value)}} id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" placeholder='username' required={true}/>
       <div id="validationServerUsernameFeedback" className="invalid-feedback">
         Please choose a username.
       </div>
@@ -72,17 +73,10 @@ export default function Book() {
   </div><br/>
   <div className="col-md-4">
     <label for="validationServer02" className="form-label">Email</label>
-    <input type="email" className="form-control is-valid" value={email}
+    <input type="email" className="form-control is-valid" value={Email}
           onChange={(e) => setEmail(e.target.value)}  id="validationServer02"placeholder='Enter your Active email' required={true}/>
     <div  id="validationServer03Feedback" className="invalid-feedback">
      valid Email
-    </div>
-  </div><br/>
-  <div className="col-md-4" style={{marginLeft:390}}>
-    <label for="validationServer02" className="form-label">Password</label>
-    <input type="textbox" className="form-control is-valid" id="validationServer02"placeholder='Create Strong password' required={true}/>
-    <div  id="validationServer03Feedback" className="invalid-feedback">
-    Password
     </div>
   </div><br/>
   <div className="col-md-6" style={{marginTop:50}}><h3 style={{color:'white'}}>Gender</h3>
@@ -101,7 +95,7 @@ export default function Book() {
   </div>
   <div className="col-md-6"style={{marginLeft:1}}>
     <label  for="validationServer03" className="form-label">City</label>
-    <input type="textbox" className="form-control is-invalid" id="validationServer03"  placeholder='City' aria-describedby="validationServer03Feedback" required={true}/>
+    <input type="textbox" className="form-control is-invalid" id="validationServer03" onChange={(e)=>{setCity(e.target.value)}} placeholder='City' aria-describedby="validationServer03Feedback" required={true}/>
     <div id="validationServer03Feedback" className="invalid-feedback">
       Please provide a valid city.
     </div>
