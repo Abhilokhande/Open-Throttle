@@ -4,18 +4,39 @@ import Header from './Header'
 import Footer from './footer'
 import Contact from './contact'
 export default function Book() {
-  const [email, setEmail] = useState('');
+  const [Email, setEmail] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/send-email', { email });
+      await axios.post('/send-email', { Email });
       alert('Email sent successfully!');
     } catch (error) {
       console.error('Error sending email:', error);
       alert('Error sending email. Please try again later.');
     }
   };
+  const navigate=useNavigate()
+  const [Fname,setFname]=useState('')
+  const [Lname,setLname]=useState('')
+  const [City,setCity]=useState('')
+  const [UserName,setName]=useState('')
+  const [Password,setPassword]=useState('')
+  const submit=(e)=>{
+    e.preventDefault();
+        axios.post("http://localhost:3001/Booking",{
+        UserName,Password,Fname,Lname,Email,City
+      })
+      .then(
+        result=>{console.log(result)
+          navigate('/')
+        }
+      )
+      .catch(e=>{
+        alert("wrong details")
+        console.log(e)
+      })
+  }
   return (
     <div>
          <Header title="Open Throttle's" n2='Sign In' ln2='/createaccount' drop="Login"/>

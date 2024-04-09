@@ -20,6 +20,12 @@ app.post("/Register", (req, res) => {
         .then(Register => res.json(Register))
         .catch(err => res.json(err))
 });
+app.post("/Booking", (req, res) => {
+    UserModel.create(req.body)
+        .then(Register => res.json(Booking))
+        .catch(err => res.json(err))
+});
+
 
 app.listen(3001, () => {
     console.log("Server is running on port 3001");
