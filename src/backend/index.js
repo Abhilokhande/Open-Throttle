@@ -79,3 +79,18 @@ app.post("/Booking", (req, res) => {
 app.listen(3002, () => {
     console.log("Server is running on port 3002");
 });
+
+
+app.get("/Booking", async (req, res) => {
+    try {
+        const bookings = await BookingModel.find();
+        res.json(bookings);
+    } catch (error) {
+        console.error("Error fetching bookings:", error);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+});
+
+app.listen(3004, () => {
+    console.log("Server is running on port 3001");
+});

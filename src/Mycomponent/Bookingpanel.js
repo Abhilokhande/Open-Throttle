@@ -3,7 +3,7 @@ import Header from './Header';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Footer from './footer';
-const Users = () => {
+const Bookingpanel = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
@@ -11,7 +11,7 @@ const Users = () => {
     }, []);
 
     const fetchUsers = () => {
-        axios.get('http://localhost:3001/users')
+        axios.get('http://localhost:3001/Booking')
             .then(response => {
                 setUsers(response.data);
             })
@@ -21,7 +21,7 @@ const Users = () => {
     };
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost:3001/users/${id}`)
+        axios.delete(`http://localhost:3001/Booking/${id}`)
             .then(response => {
                 console.log('User deleted successfully:', response.data);
                 setUsers(users.filter(user => user._id !== id)); // Update state after deletion
@@ -34,12 +34,12 @@ const Users = () => {
 
     return (
         <div>
-             <Header title="Open Throttle's" n2='Bookings' ln2='/bookingpanel'/>
+             <Header title="Open Throttle's"/>
              <div className="card text-bg-dark">
   <img src={process.env.PUBLIC_URL + '/bike.jpeg'} className="card-img" alt="..."/>
   <div className="card-img-overlay">
   
-            <h2 style={{backgroundColor:'black', padding:20,textAlign:'center' ,fontSize:30}}>User List</h2>
+            <h2 style={{backgroundColor:'black', padding:20,textAlign:'center' ,fontSize:30}}>Booking List</h2>
             <table className="table table-striped table-hover" style={{ backgroundColor: 'transparent' }}>
                 <thead>
                     <tr>
@@ -51,14 +51,14 @@ const Users = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {users.map((user,index) => (
-                        <tr key={user._id}>
+                    {users.map((Bookings,index) => (
+                        <tr key={Bookings._id}>
                              <td>{index + 1}</td> {/* Serial number */}
-                            <td>{user.Fname} {user.Lname}</td>
-                            <td>{user.Email}</td>
-                            <td>{user.City}</td>
+                            <td>{Bookings.Fname} {Bookings.Lname}</td>
+                            <td>{Bookings.Email}</td>
+                            <td>{Bookings.City}</td>
                             <td>
-                                <button onClick={() => handleDelete(user._id)}>Delete</button>
+                                <button onClick={() => handleDelete(Bookings._id)}>Delete</button>
                             </td> {/* Delete button */}
                         </tr>
                     ))}
@@ -71,4 +71,4 @@ const Users = () => {
     );
 };
 
-export default Users;
+export default Bookingpanel;

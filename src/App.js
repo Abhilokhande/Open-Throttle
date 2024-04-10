@@ -17,6 +17,7 @@ import Location from './Mycomponent/Location';
 import Addminlogin from './Mycomponent/Addminlogin';
 import Book from './Mycomponent/Book';
 import Users from './Mycomponent/Users';
+import Bookingpanel from './Mycomponent/Bookingpanel'
 // import Sendmail from "./src/backend/Sendmail.js";
 // import Navbar from "./component/navbar";
 
@@ -36,6 +37,7 @@ function App() {
       <Route path='addminlogin' element={<Addminlogin/>}/>
       <Route path='book' element={<Book/>}/>
       <Route path='users' element={<Users/>}/>
+      <Route path="bookingpanel" element={<Bookingpanel/>}/>
       {/* <Route path="send-email" element={<Sendmail/>}/> */}
       {/* <Route path='navbar' element={<Navbar/>}/> */}
      </Routes>
