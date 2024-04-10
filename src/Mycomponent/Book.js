@@ -5,18 +5,7 @@ import Footer from './footer'
 import Contact from './contact'
 import { Link, useNavigate } from 'react-router-dom';
 export default function Book() {
-  // const [Email, setEmail] = useState('');
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     await axios.post('/send-email', { Email });
-  //     alert('Email sent successfully!');
-  //   } catch (error) {
-  //     console.error('Error sending email:', error);
-  //     alert('Error sending email. Please try again later.');
-  //   }
-  // };
   const [Fname, setFname] = useState('');
   const [Lname, setLname] = useState('');
   const [Email, setEmail] = useState('');
