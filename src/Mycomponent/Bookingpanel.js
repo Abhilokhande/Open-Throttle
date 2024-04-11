@@ -34,7 +34,7 @@ const Bookingpanel = () => {
 
     return (
         <div>
-             <Header title="Open Throttle's"/>
+             <Header title="Open Throttle's" n2='Home' ln2='/'/>
              <div className="card text-bg-dark">
   <img src={process.env.PUBLIC_URL + '/bike.jpeg'} className="card-img" alt="..."/>
   <div className="card-img-overlay">

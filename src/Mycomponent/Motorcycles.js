@@ -24,7 +24,7 @@ export default function Motorcycles(props) {
     const t= 'ROYAL ENFIELD';
   return (
     <div>
-        <Header title="OPEN THROTTLE'S"/>
+        <Header title="OPEN THROTTLE'S" n2='Home' ln2='/'/>
 
         <div className="card text-bg-dark">
   <img src="./Royal.jpg" className="card-img" alt="..."/>

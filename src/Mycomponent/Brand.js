@@ -15,7 +15,7 @@ export default function Brand(props) {
   ];
     return (<>
     <div>
-      <Header  title="ROYAL ENFIELD"/>
+      <Header  title="ROYAL ENFIELD" n2='Home' ln2='/'/>
         </div>
         <div>
         <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="ride  ">

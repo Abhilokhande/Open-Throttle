@@ -24,7 +24,7 @@ export default function Bike(props) {
   };
   return (
   <>
-      <Header title="BULLET-350"/>
+      <Header title="BULLET-350" n2='Home' ln2='/'/>
 <div className="card text-bg-dark">
   <img src={process.env.PUBLIC_URL + '/Image/b2.jpg'} className="card-img" alt="..."/>
   <div className="card-img-overlay">

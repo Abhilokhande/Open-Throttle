@@ -5,7 +5,7 @@ export default function Location() {
     <div style={{textAlign:'center',backgroundColor:'#333' , padding:10}}>
         <div style={{marginLeft:730 , marginRight:730 , marginTop:50}}>
         <img src={process.env.PUBLIC_URL + '/Image/locate.jpg'} style={{alignContent:'center'}}/></div>
-      <div style={{marginTop:10}}><Link to="/">Find a Store</Link></div>
+      <div style={{marginTop:10}}><Link to="/map">Find a Store</Link></div>
     </div>
   )
 }

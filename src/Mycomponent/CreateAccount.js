@@ -31,7 +31,7 @@
   }
             return(
     <>
-            <Header title="Open Throttle's"/>
+            <Header title="Open Throttle's" n2='Home' ln2='/'/>
             <div className="background-page">
             <img src={process.env.PUBLIC_URL + '/login.jpg'}  alt="Background" className="background-image" />
             <div className='createacc'>
