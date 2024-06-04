@@ -47,7 +47,7 @@ const Bookingpanel = () => {
                         <th>Name</th>
                         <th>Email</th>
                         <th>City</th>
-                        <th>Delete</th> {/* New column for delete button */}
+                        {/* <th>Delete</th> New column for delete button */}
                     </tr>
                 </thead>
                 <tbody>
@@ -57,9 +57,9 @@ const Bookingpanel = () => {
                             <td>{Bookings.Fname} {Bookings.Lname}</td>
                             <td>{Bookings.Email}</td>
                             <td>{Bookings.City}</td>
-                            <td>
+                            {/* <td>
                                 <button onClick={() => handleDelete(Bookings._id)}>Delete</button>
-                            </td> {/* Delete button */}
+                            </td> Delete button */}
                         </tr>
                     ))}
                 </tbody>

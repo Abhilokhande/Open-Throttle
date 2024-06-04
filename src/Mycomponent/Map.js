@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from './Header'
+import Footer from './footer'
+import Contact from './contact';
 export default function Map() {
   return (
     <div><Header title="Open Throttle's" n2='Home' ln2='/'/>
@@ -9,6 +11,8 @@ export default function Map() {
 
   </div>
 </div>
+<Contact/>
+<Footer/>
     </div>
   )
 }

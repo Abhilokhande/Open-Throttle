@@ -69,7 +69,7 @@ app.post("/Booking", (req, res) => {
     BookingModel.create(req.body)
     .then(book => {
         // Send email
-        sendEmail(req.body.Email, 'Booking Confirmation', 'Your booking has been confirmed.');
+        sendEmail(req.body.Email, 'Booking Confirmation', 'Your booking has been confirmed.Thanks for using the site ');
         res.json(book);
     })
         .catch(err => res.json(err))

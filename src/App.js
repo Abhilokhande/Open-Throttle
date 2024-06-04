@@ -4,7 +4,7 @@ import './App.css';
 // import Footer from './Mycomponent/footer';
 import React from "react";
 // import Login from "./Mycomponent/Login";
-import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
+  import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
 // import Switch from "react-router-dom";
 // import Contact from './Mycomponent/contact';
 import Main from './Mycomponent/Main';
